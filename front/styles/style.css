@@ -1,0 +1,350 @@
+@font-face {
+    font-family: "Anton-Regular";
+    src: url("../assets/fonts/Anton-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../assets/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Rajdhani";
+    src: url("../assets/fonts/Rajdhani-Medium.ttf");
+}
+
+@font-face {
+    font-family: "NewAmsterdam";
+    src: url("../assets/fonts/NewAmsterdam-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+/*                                                Seccion del nav                                      */
+
+#header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    
+}
+
+#nav-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #ffffff 70%, #ffffff00 100%);
+    height: 60px;
+
+
+    padding-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    font-weight: bold;
+}
+
+#img-logo{
+    width: 5%;
+}
+
+#img-logo:hover{
+    cursor: pointer;
+}
+
+
+#ul-nav .li-nav{
+    display: inline-block;
+
+    padding: 0px 20px;
+}
+
+.item-nav{
+    color: #2160e9 !important;
+    text-decoration: none;
+    font-family: "Quicksand";
+}
+
+.item-nav:hover{
+    text-decoration: underline;
+    color: #003097 !important;
+}
+
+/*                                             Seccion de carrusel                                             */
+.carouselContairner{
+    width: 80%;
+}
+#imgCarruselPrincipal{
+    height: 400px;
+    object-fit: cover;
+} 
+
+/*                                             Seccion de las peliculas                                        */
+
+#main-contenido{
+    padding-top: 80px;
+}
+
+
+#seccion-peliculas{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0px; 
+    padding: 20px;
+    gap: 10px;
+
+}
+
+.titulo-principal{
+    font-family: "NewAmsterdam";
+    font-size: 3rem;
+    text-align: center;
+    color: #5d4037;
+}
+#titulo-peliculas{
+    padding-top: 60px;
+}
+
+.tarjeta-pelicula{
+    background-color: #f7d0e2;
+    border-radius: 10px;
+    width: 25%;
+    margin: 5px;
+}
+
+.tarjeta-pelicula{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: transform 1s ease-out;
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+
+.tarjeta-pelicula:hover{
+    transform:translateY(-10px);
+    z-index: 10;
+    background-color: #fd8fc2;
+}
+
+
+.poster-pelicula{
+    margin: 10px 0px;
+    border-radius: 10px;
+    width: 15rem;
+    height: 22rem;
+}
+
+.titulo-pelicula{
+    color: #000000;
+    font-size: 15px;
+    font-family: "Anton-Regular";
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.descripcion-pelicula{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.descripcion-pelicula li{
+    font-family: "Rajdhani";
+    color: #5d4037;
+    font-size: 13px;
+}
+
+.descripcion-pelicula li:last-child{
+    margin-bottom: 10px;
+}
+
+/*                          Seccion Peliculas Favoritas                           */
+
+.peliculasfav-titulo{
+    padding-top: 60px;
+}
+
+.descripcion-peli-series{
+    font-family: "Quicksand";
+    width: 60%;
+    text-align: justify;
+    margin: auto;
+    padding: 30px 0px;
+    padding-bottom: 80px;
+}
+
+#contenedor-peliculas-favoritas{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0px; 
+    padding: 20px;
+    padding-top: 80px;
+    gap: 10px; 
+}
+
+#tarjeta-pelicula{
+    background-color: #80deea;
+}
+
+#tarjeta-pelicula:hover{
+    background-color: #3ad6eb;
+    transform:translateY(-10px);
+    z-index: 10;
+}
+
+/*                       Seccion Series Favoritas                                      */
+
+#contenedor-series-favoritas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0px; 
+    padding: 20px;
+    padding-top: 80px;
+    gap: 10px; 
+}
+
+#tarjeta-serie{
+    background-color: #ffcc80;
+}
+
+#tarjeta-serie:hover{
+    transform:translateY(-10px);
+    z-index: 10;
+    background-color: #ffa928;
+}
+
+/*                           Seccion del formulario                                      */
+#main-form{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 70vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#div-form{
+    margin: 90px 0px;
+}
+
+#div-form > form{
+    padding: 50px 55px 85px 55px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #000000;
+    text-align: center;
+    width: 100vh;
+}
+
+.input-grupo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#div-form > form > h1{
+    color: #003097;
+    font-size: 23px;
+    font-family: "Quicksand";
+    text-decoration: underline;
+
+}
+
+#div-form > form > p{
+    font-size: 18px;
+    font-family: "Rajdhani";
+    color: #2160e9;
+    margin-bottom: 20px;
+}
+
+.line{
+    display: inline-block;
+    width: 50px;
+    height: 7px;
+    background: linear-gradient(90deg, rgb(0, 80, 254) 0%,rgb(0, 4, 255) 77%);
+}
+
+
+.input-grupo > label{
+    color: #003097;
+    font-size: 15px;
+    font-family: "SpaceGrotesk";
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.input-grupo > input {
+    padding:  17px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ededed;
+    color: #1b1b1b;
+    outline: none;
+}   
+
+.input-grupo > input::placeholder{
+    color: #606060;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a{
+    color: #1b1b1b;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-txt a:hover{
+    text-decoration: underline;
+}
+
+#btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn{
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgb(0, 80, 254) 0%,rgb(0, 4, 255) 77%);
+    cursor: pointer;
+    transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out, transform 0.3s ease-in-out;
+    height: 40px;
+    width: 200px;
+}
+
+.btn:hover{
+    background: linear-gradient(90deg, rgb(0, 4, 255) 0%, rgb(0, 80, 254) 77%);
+    box-shadow: 0 0 20px rgb(0, 152, 254);
+    transform: scale(1.05); 
+}
+
+#reset-btn{
+    background: linear-gradient(90deg, rgb(254, 0, 178) 0%,rgb(255, 0, 0) 77%);
+    transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#reset-btn:hover{
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(254, 0, 178) 77%);
+    box-shadow: 0 0 20px rgb(246, 0, 254);
+    transform: scale(1.05); 
+}

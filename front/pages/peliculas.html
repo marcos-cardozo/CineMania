@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+    <title>Peliculas Favoritas</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav id="nav-contenedor">
+        <img
+          src="../assets/img/_af33cf68-52ce-4949-b1e6-a2d356bfad5c-removebg-preview.png"
+          alt="logo-img"
+          id="img-logo"
+        />
+        <!-- <h1 id="titulo-principal">Cinemania</h1> -->
+        <ul id="ul-nav">
+          <li class="li-nav">
+            <a href="../index.html" class="item-nav">Inicio</a>
+          </li>
+          <li class="li-nav">
+            <a href="./agregar-peliculas.html" class="item-nav"
+              >Agregar Pelicula</a
+            >
+          </li>
+          <li class="li-nav">
+            <a href="./peliculas.html" class="item-nav"
+              >Mis peliculas favoritas</a
+            >
+          </li>
+          <li class="li-nav">
+            <a href="./series.html" class="item-nav">Mis series favoritas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo-principal peliculasfav-titulo">
+        Mis Peliculas favoritas
+      </h1>
+      <p class="descripcion-peli-series" id="descPelis">
+        Me atraen las películas de gánsters porque ofrecen una fascinante mezcla
+        de complejidad narrativa, personajes profundos y una visión cruda de la
+        realidad. Estas películas, como Goodfellas y Casino, capturan la esencia
+        de la vida en el submundo criminal con una autenticidad que pocas otras
+        películas logran igualar. La forma en que exploran la lealtad, la
+        traición y el poder en un entorno tan intenso y desafiante me resulta
+        extremadamente interesante.<br> Además, Pulp Fiction de Quentin Tarantino,
+        con su estructura no lineal y diálogos ingeniosos, ofrece una
+        experiencia cinematográfica única y absorbente. La forma en que
+        entrelaza múltiples historias y personajes crea una narrativa rica y
+        dinámica que mantiene el interés y la emoción a lo largo de toda la
+        película.<br> Django Unchained, por su parte, combina el género del western
+        con elementos de la película de gánsters, ofreciendo un enfoque
+        innovador y estilizado. La mezcla de acción intensa, humor negro y una
+        crítica social aguda hace que sea una experiencia cinematográfica
+        memorable.
+      </p>
+      <div class="carouselContairner container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://m.media-amazon.com/images/M/MV5BNWI4NWY1OGItZmU3NS00MGZlLWE4MDItNzBiZjBjOTNiNjIwXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images2.alphacoders.com/132/1324762.jpeg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="https://filmthreat.com/wp-content/uploads/2020/07/FEATURES-casino_movie_facts-00A.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/04/django-desencadenado-2682899.jpg" class="d-block w-100">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <section id="contenedor-peliculas-favoritas"></section>
+    </main>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../dist/bundle.js"></script>
+  <script src="../scripts/favorities-movies.js"></script>
+  <script src="../scripts/render-cards-favorities-movies.js"></script>
+  </body>
+</html>

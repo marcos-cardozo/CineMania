@@ -1,0 +1,23 @@
+{
+  "name": "cinemania",
+  "version": "1.0.0",
+  "description": "proyecto fullstack de cinema page",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "build": "webpack",
+    "build-watch": "webpack --watch",
+    "dev": "npm run build-watch & npm start"
+  },
+  "keywords": [],
+  "author": "marcos-cardozo",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}

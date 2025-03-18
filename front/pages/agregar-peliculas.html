@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Formulario de peliculas</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav id="nav-contenedor">
+        <img
+          src="../assets/img/_af33cf68-52ce-4949-b1e6-a2d356bfad5c-removebg-preview.png"
+          alt="logo-img"
+          id="img-logo"
+        />
+        <!-- <h1 id="titulo-principal">Cinemania</h1> -->
+        <ul id="ul-nav">
+          <li class="li-nav">
+            <a href="../index.html" class="item-nav">Inicio</a>
+          </li>
+          <li class="li-nav">
+            <a href="./agregar-peliculas.html" class="item-nav"
+              >Agregar Pelicula</a
+            >
+          </li>
+          <li class="li-nav">
+            <a href="./peliculas.html" class="item-nav"
+              >Mis peliculas favoritas</a
+            >
+          </li>
+          <li class="li-nav">
+            <a href="./series.html" class="item-nav">Mis series favoritas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-form">
+      <div id="div-form">
+        <form id="add-movie-form">
+          <h1>FORMULARIO PARA AGREGAR TUS PELICULAS</h1>
+
+          <span class="line"></span>
+          <p>Agrega los datos para generar la tarjeta de tu pelicula</p>
+          <div class="input-grupo">
+            <label class="labels-form" for="title">Titulo:</label>
+            <input
+              type="text"
+              name="title"
+              placeholder="Ej: GoodFellas"
+              id="title-movie"
+            />
+
+            <label for="year">Año:</label>
+            <input
+              type="number"
+              name="year"
+              placeholder="Ej: 1990"
+              id="year-movie"
+            />
+
+            <label for="director">Director:</label>
+            <input
+              type="text"
+              name="director"
+              placeholder="Ej: Martin Scorsese"
+              id="director-movie"
+            />
+
+            <label for="duration">Duración:</label>
+            <input
+              type="text"
+              name="duration"
+              placeholder="Ej: 2h 26min"
+              id="duration-movie"
+            />
+
+            <label for="genre">Genero:</label>
+            <input
+              type="text"
+              name="duration"
+              placeholder="Ej: Crime - Drama"
+              id="genre-movie"
+            />
+
+            <label for="rate">Puntuación:</label>
+            <input
+              type="text"
+              name="rate"
+              placeholder="Ej: 8.7"
+              id="rate-movie"
+            />
+
+            <label for="rate">Url del Poster:</label>
+            <input
+              type="url"
+              name="urlImg"
+              placeholder="Ej: https://m.media-amazon.com/images/..."
+              id="poster-movie"
+            />
+
+            <div class="form-txt">
+              <a href="#">Politica de Privacidad</a>
+              <a href="#">Terminos y Condiciones</a>
+            </div>
+            <div id="btn-container">
+              <button type="submit" class="btn">Agregar</button>
+              <button type="reset" class="btn" id="reset-btn">Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="../dist/bundle.js"></script>
+<<<<<<< HEAD
+    <script src="../scripts/form-function.js"></script>
+=======
+>>>>>>> a34b63e216c773814b8963405d2e3e977976fffd
+  </body>
+</html>
